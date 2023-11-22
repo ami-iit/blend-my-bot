@@ -53,7 +53,49 @@ Once installed, you can run Blender by typing `Ctrl+Shift+P` and then `Blender: 
 
 ## 🚀 Usage
 
-TODO
+```python
+# import the library
+from blend_my_bot import ModelImporter
+# import the blender python API
+import bpy
+
+# ModelImporter needs 3 arguments:
+# - the name you want to give to your robot
+# - the path to the urdf file
+# - the list of the joints you want to move in the animation
+
+urdf_path = "path/to/urdf"
+robot_name = "my_robot"
+joints_list = ["joint1", "joint2", "joint3", "etc"]
+
+# build the blender robot model
+model = ModelImporter.build_model(robot_name, urdf_path, joints_list)
+
+# you need to set the frame rate and the number of frames of the animation
+# length of the animation in seconds
+bpy.context.scene.render.fps_base = time_length
+# number of frames
+bpy.context.scene.render.fps = number_of_frames
+# when the animation starts
+bpy.context.scene.frame_start = 0
+# when the animation ends
+bpy.context.scene.frame_end = number_of_frames
+
+# in Blender the effective frame rate is fps / fps_base
+
+# you can now move the base and the joints of the robot
+for k in range(number_of_frames):
+    # jet the joint trajectory at time k
+    s = joint_trajectory[k]
+    # get the base pose described by a 4x4 homogeneous matrix at time k
+    w_H_b = base_trajectory[k]
+    # update the robot model
+    model.update(w_H_b, s)
+    # set the frame
+    bpy.context.scene.frame_set(k)
+```
+
+Have a look at the `examples` folder for more examples.
 
 ## 🦿 Troubleshooting
 
