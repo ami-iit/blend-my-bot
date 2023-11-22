@@ -69,3 +69,10 @@ code .
 `blend-my-bot` is an open-source project. Contributions are very welcome!
 
 Open an issue with your feature request or if you spot a bug. Then, you can also proceed with a Pull-requests! 🚀
+
+## 📝 Tips
+
+Some tips to speed up your Cycle render:
+<https://www.youtube.com/watch?v=FNiobzflmpA>
+
+Feel free to add your own tips here!
