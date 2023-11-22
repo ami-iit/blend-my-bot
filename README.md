@@ -4,6 +4,8 @@
 
 **Import your robot in Blender and create a nice render of it!**
 
+https://github.com/ami-iit/blend-my-bot/assets/29798643/aa7b130f-0fa4-44cc-844b-eeb1e762af18
+
 </div>
 
 ## 🐍 Requirements
