@@ -51,6 +51,10 @@ You need an additional vscode extension: `Blender Development` which can be foun
 
 Once installed, you can run Blender by typing `Ctrl+Shift+P` and then `Blender: Start`. It will ask you to select the blender executable. Select the one in the folder where you extracted the blender archive (or the installed version if you installed it). Once Blender is running, you can run the script by typing `Ctrl+Shift+P` and then `Blender: Run Script`.
 
+Note that you could also write a script directly in the `Scripting` tab of Blender and run it from there.
+
+For possible issues when running the script see the [Troubleshooting](#troubleshooting) section.
+
 ## 🚀 Usage
 
 ```python
