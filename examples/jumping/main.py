@@ -73,7 +73,7 @@ bpy.context.scene.frame_start = 0
 # set when the animation ends
 bpy.context.scene.frame_end = data["knots"]
 
-# in blender the effective fps is fps/fps_base
+# in blender the effective frame rate is fps/fps_base
 
 
 # start the animation
