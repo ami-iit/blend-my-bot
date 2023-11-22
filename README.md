@@ -10,13 +10,15 @@ https://github.com/ami-iit/blend-my-bot/assets/29798643/aa7b130f-0fa4-44cc-844b-
 
 ## 🐍 Requirements
 
-- `python3`(<https://wiki.python.org/moin/BeginnersGuide>)
-- [Blender](<https://www.blender.org/download/>)
-- `iDynTree`(<https://github.com/robotology/idyntree>)
-- `numpy`(<https://numpy.org/>)
-- `bpy`(<https://pypi.org/project/bpy/>)
+- [`python3`](<https://wiki.python.org/moin/BeginnersGuide>)
+- [`Blender`](<https://www.blender.org/download/>)
+- [`iDynTree`](<https://github.com/robotology/idyntree>)
+- [`numpy`](<https://numpy.org/>)
+- [`bpy`](<https://pypi.org/project/bpy/>)
 
 Note: This library has been tested with the `appimage` version of Blender 3.6.
+
+Note2: This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils)
 
 ## 💾 Installation
 
