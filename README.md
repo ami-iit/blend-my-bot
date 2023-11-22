@@ -4,7 +4,7 @@
 
 **Import your robot in Blender and create a nice render of it!**
 
-https://github.com/ami-iit/blend-my-bot/assets/29798643/09733151-3471-4f38-9fb8-a7f0f97f6917
+https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-960a13690ce7
 
 </div>
 
