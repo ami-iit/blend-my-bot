@@ -97,6 +97,12 @@ for k in range(number_of_frames):
 
 Have a look at the `examples` folder for more examples.
 
+In the `examples/jumping` folder you can find a script that generates a jumping animation of the `iCub` robot. Here the meshes are in a gray, `stl` format.
+
+Having the meshes in a `obj` format, instead, will give a nicer and more colorful render! See the Readme of the following repository, for example!
+
+[Whole-Body Trajectory Optimization for Robot Multimodal Locomotion](<https://github.com/ami-iit/paper_lerario_2022_humanoids_planning-multimodal-locomotion>)
+
 ## 🦿 Troubleshooting
 
 If you install a new package in the conda environment but it is not available when you run the script, try to activate it in a terminal **before** and then open `Visual Studio Code` from the terminal:
