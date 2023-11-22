@@ -1,4 +1,4 @@
-# blend-my-bot
+# Blend My Bot!
 
 <div align="center">
 
