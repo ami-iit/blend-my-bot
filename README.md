@@ -16,7 +16,7 @@ https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-
 - [`numpy`](<https://numpy.org/>)
 - [`bpy`](<https://pypi.org/project/bpy/>)
 
-Note: This library has been tested with the `appimage` version of Blender 3.6.
+Note: This library has been tested with the `appimage` version of Blender 3.6. You should use a Python version that matches the one supported by the Blender version. 
 
 Note2: This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils)
 
@@ -26,7 +26,7 @@ Create a conda environment and install the dependencies:
 
 ```bash
 conda create -n blender_env python=3.10
-conda activate blender
+conda activate blender_env
 ```
 
 Create a backup of the python folder in the blender folder
@@ -38,7 +38,7 @@ mv blender_folder/version/python blender_folder/version/python_backup
 Run the command below in the blender python folder to create a symbolic link to the conda environment in the blender python folder
 
 ```bash
-sudo ln -s ~/mambaforge/envs/blender blender_folder/version/python
+sudo ln -s ~/mambaforge/envs/blender_env blender_folder/version/python
 ```
 
 From the root of the repository install the package
