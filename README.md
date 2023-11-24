@@ -53,6 +53,9 @@ You need an additional vscode extension: `Blender Development` which can be foun
 
 Once installed, you can run Blender by typing `Ctrl+Shift+P` and then `Blender: Start`. It will ask you to select the blender executable: select the one in the folder where you extracted the blender archive (or the installed version if you installed it). Once Blender is running, you can run the script by typing `Ctrl+Shift+P` and then `Blender: Run Script`.
 
+You can add objects, lights, cameras as well as play with render parameters directly in Blender. 
+I you prefer, you can save the Blender project. Everything will be there, including the robot and its motion, so that it's not needed to run your script again.
+
 Note that you could also write a script directly in the `Scripting` tab of Blender and run it from there.
 
 For possible issues when running the script see the [Troubleshooting](#troubleshooting) section.
