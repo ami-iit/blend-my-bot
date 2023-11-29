@@ -1,4 +1,4 @@
-# Blend My Bot!
+# Blend My Bot
 
 <div align="center">
 
@@ -16,9 +16,9 @@ https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-
 - [`numpy`](<https://numpy.org/>)
 - [`bpy`](<https://pypi.org/project/bpy/>)
 
-Note: This library has been tested with the `appimage` version of Blender 3.6. You should use a Python version that matches the one supported by the Blender version. 
+Note: This library has been tested with the `appimage` version of Blender 3.6. You should use a Python version that matches the one supported by the Blender version.
 
-Note2: This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils).
+Note 2: This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils).
 
 ## 💾 Installation
 
@@ -44,7 +44,7 @@ sudo ln -s ~/mambaforge/envs/blender_env blender_folder/version/python
 From the root of the repository install the package:
 
 ```bash
-pip install -e .
+pip install blend-my-bot
 ```
 
 If you want to run the scripts from `Visual Studio Code`, you need to install the `vscode python` extension and set the python interpreter to the already created conda environment.
@@ -53,8 +53,8 @@ You need an additional vscode extension: `Blender Development` which can be foun
 
 Once installed, you can run Blender by typing `Ctrl+Shift+P` and then `Blender: Start`. It will ask you to select the blender executable: select the one in the folder where you extracted the blender archive (or the installed version if you installed it). Once Blender is running, you can run the script by typing `Ctrl+Shift+P` and then `Blender: Run Script`.
 
-You can add objects, lights, cameras as well as play with render parameters directly in Blender. 
-I you prefer, you can save the Blender project. Everything will be there, including the robot and its motion, so that it's not needed to run your script again.
+You can add objects, lights, and cameras as well as play with render parameters directly in Blender.
+If you prefer, you can save the Blender project. Everything will be there, including the robot and its motion, so that it does not need to run your script again.
 
 Note that you could also write a script directly in the `Scripting` tab of Blender and run it from there.
 
@@ -122,9 +122,11 @@ code .
 ```
 
 For example, when using [`resolve_robotics_uri_py`](https://github.com/ami-iit/resolve-robotics-uri-py) an error like the following one appears:
+
 ```
 FileNotFoundError: resolve-robotics-uri-py: No file corresponding to uri "package://iCub/robots/iCubGazeboV2_7/model.urdf" found
 ```
+
 This is due to the fact that environmental variables are not sourced. Activating the conda environment before opening `vscode` solves this issue!
 
 ## 🦸‍♂️ Contributing
