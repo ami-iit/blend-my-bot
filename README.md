@@ -11,7 +11,7 @@ https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-
 ## 🐍 Requirements
 
 - [`python3`](<https://wiki.python.org/moin/BeginnersGuide>)
-- [`Blender`](<https://www.blender.org/download/>)
+- [`Blender 3.6`](<https://www.blender.org/download/lts/3-6/>)
 - [`iDynTree`](<https://github.com/robotology/idyntree>)
 - [`numpy`](<https://numpy.org/>)
 - [`bpy`](<https://pypi.org/project/bpy/>)
