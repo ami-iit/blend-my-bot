@@ -85,6 +85,8 @@ class ModelImporter:
         )
         for link_id in range(model_geometry.getNrOfLinks()):
             link_name = model_geometry.getLinkName(link_id)
+            if visuals[link_id] == ():  # no visual
+                continue
             link_visual = visuals[link_id][0]
             if link_visual.isExternalMesh():
                 mesh_path = (
