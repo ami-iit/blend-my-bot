@@ -128,15 +128,15 @@ code .
 
 For example, when using [`resolve_robotics_uri_py`](https://github.com/ami-iit/resolve-robotics-uri-py) an error like the following one appears:
 
-#### Crush when running the script
-
-If Blender crashes when running the script from `Visual Studio Code`, try to run the script from the `Scripting` tab of Blender.
-
 ```
 FileNotFoundError: resolve-robotics-uri-py: No file corresponding to uri "package://iCub/robots/iCubGazeboV2_7/model.urdf" found
 ```
 
 This is due to the fact that environmental variables are not sourced. Activating the conda environment before opening `vscode` solves this issue!
+
+#### Crush when running the script
+
+If Blender crashes when running the script from `Visual Studio Code`, try to run the script from the `Scripting` tab of Blender.
 
 ## 🦸‍♂️ Contributing
 
