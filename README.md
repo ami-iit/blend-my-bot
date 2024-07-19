@@ -4,7 +4,7 @@
 
 **Import your robot in Blender and create a nice render of it!**
 
-https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-960a13690ce7
+<https://github.com/ami-iit/blend-my-bot/assets/29798643/c224cd56-1d90-42dd-aec5-960a13690ce7>
 
 </div>
 
@@ -116,6 +116,8 @@ Having the meshes in an `obj` format, instead, will give a nicer and more colorf
 
 ## 🦿 Troubleshooting
 
+#### FileNotFoundError when running the script
+
 If you install a new package in the conda environment but it is not working as you expect when you run the script, try to activate it in a terminal **before** and then open `Visual Studio Code` from the terminal:
 
 ```bash
@@ -124,6 +126,10 @@ code .
 ```
 
 For example, when using [`resolve_robotics_uri_py`](https://github.com/ami-iit/resolve-robotics-uri-py) an error like the following one appears:
+
+#### Crush when running the script
+
+If Blender crashes when running the script from `Visual Studio Code`, try to run the script from the `Scripting` tab of Blender.
 
 ```
 FileNotFoundError: resolve-robotics-uri-py: No file corresponding to uri "package://iCub/robots/iCubGazeboV2_7/model.urdf" found
