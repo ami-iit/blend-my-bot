@@ -20,7 +20,8 @@
 > You should use a Python version that matches the one supported by the Blender version.
 > For example, Blender 4 supports Python 3.10
 
-Note 2: This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils).
+> [!NOTE]
+> This library does not define the rig of the robot. For this, you can use a library such as [`blender-robotics-utils`](https://github.com/robotology/blender-robotics-utils).
 
 ## 💾 Installation
 
