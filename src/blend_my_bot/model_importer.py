@@ -1,10 +1,11 @@
 from dataclasses import dataclass
 from typing import List
+
 import bpy
 import idyntree.bindings as idyntree
 import numpy as np
 
-from blend_my_bot import Link, BlenderModel
+from blend_my_bot import BlenderModel, Link
 
 
 @dataclass
@@ -99,7 +100,7 @@ class ModelImporter:
                     mesh = bpy.data.objects[mesh_name]
                 elif mesh_path.endswith(".obj"):
                     print(f"Importing {mesh_path}")
-                    bpy.ops.import_scene.obj(filepath=mesh_path)
+                    bpy.ops.wm.obj_import(filepath=mesh_path)
                     mesh = bpy.context.selected_objects[0]
                 elif mesh_path.endswith(".stl"):
                     print(f"Importing {mesh_path}")
