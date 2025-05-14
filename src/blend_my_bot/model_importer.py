@@ -104,7 +104,7 @@ class ModelImporter:
                     mesh = bpy.context.selected_objects[0]
                 elif mesh_path.endswith(".stl"):
                     print(f"Importing {mesh_path}")
-                    bpy.ops.import_mesh.stl(filepath=mesh_path)
+                    bpy.ops.wm.stl_import(filepath=mesh_path)
                     mesh = bpy.context.selected_objects[0]
                 else:
                     raise ValueError(
