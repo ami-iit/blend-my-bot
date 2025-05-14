@@ -33,7 +33,7 @@ echo "→ Blender uses Python $BLENDER_PY_VERSION"
 # ──────────────────────────────────────────────────────────────────────────────
 # 2. Create / reuse matching Conda environment
 # ──────────────────────────────────────────────────────────────────────────────
-ENV_NAME="blender_env${BLENDER_PY_VERSION//./}"   # e.g. blender_env311
+ENV_NAME="blender_env_${BLENDER_PY_VERSION//./}"   # e.g. blender_env311
 CONDA_HOME="$(conda info --base)"
 ENV_PATH="$CONDA_HOME/envs/$ENV_NAME"
 
