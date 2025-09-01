@@ -32,8 +32,7 @@ Create a conda environment and install the dependencies:
 You can use the `setup_conda_blender.sh` script to create a conda environment having the same python version as the one used by the Blender version you are using. This script will also create a symbolic link to the conda environment in the Blender python folder. Run the script from the root of the repository:
 
 ```bash
-bash setup_conda_blender.sh folder/to/blender/executable
-activate blender_env_version
+conda activate blender_env_version
 pip install blend-my-bot
 # or pip install -e .
 ```
