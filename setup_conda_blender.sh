@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Usage: sudo ./blender-conda.sh /usr/share/blender/4.1
+# Usage: sudo ./setup_conda_blender.sh /usr/share/blender/4.1
 # ------------------------------------------------------------------------------
 
 set -euo pipefail
