@@ -11,7 +11,7 @@
 ## 🐍 Requirements
 
 - [`python3`](<https://wiki.python.org/moin/BeginnersGuide>)
-- [`Blender 4`](<https://www.blender.org/download/lts/3-6/>)
+- [`Blender 4`](<https://www.blender.org/download/>)
 - [`iDynTree`](<https://github.com/robotology/idyntree>)
 - [`numpy`](<https://numpy.org/>)
 - [`bpy 4`](<https://pypi.org/project/bpy/>)
@@ -26,6 +26,21 @@
 ## 💾 Installation
 
 Create a conda environment and install the dependencies:
+
+### Use the `setup_conda_blender.sh` script
+
+You can use the `setup_conda_blender.sh` script to create a conda environment having the same python version as the one used by the Blender version you are using. This script will also create a symbolic link to the conda environment in the Blender python folder. Run the script from the root of the repository:
+
+```bash
+bash setup_conda_blender.sh folder/to/blender/executable
+conda activate blender_env_version
+pip install blend-my-bot
+# or pip install -e .
+```
+
+### Manually
+
+If you prefer to do it manually, you can follow these steps:
 
 ```bash
 conda create -n blender_env python=3.10
